@@ -1,5 +1,5 @@
-module github.com/gomarkdown/markdown
+module github.com/markbates/markdown
 
-go 1.12
+go 1.16
 
-require golang.org/dl v0.0.0-20190829154251-82a15e2f2ead // indirect
+require github.com/gomarkdown/markdown v0.0.0-20210514010506-3b9f47219fe7
