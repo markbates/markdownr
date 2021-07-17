@@ -4,9 +4,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/gomarkdown/markdown/ast"
-	"github.com/gomarkdown/markdown/html"
-	"github.com/gomarkdown/markdown/parser"
+	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdown/html"
+	"github.com/markbates/markdown/parser"
 )
 
 func renderHookEmpty(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool) {
@@ -71,7 +71,7 @@ func TestRenderNodeHookLinkAttrs(t *testing.T) {
 		},
 	}
 	params := TestParams{
-		Flags:          html.HrefTargetBlank,
+		Flags:           html.HrefTargetBlank,
 		RendererOptions: opts,
 		extensions:      parser.CommonExtensions,
 	}

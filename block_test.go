@@ -3,8 +3,8 @@ package markdown
 import (
 	"testing"
 
-	"github.com/gomarkdown/markdown/html"
-	"github.com/gomarkdown/markdown/parser"
+	"github.com/markbates/markdown/html"
+	"github.com/markbates/markdown/parser"
 )
 
 func TestPrefixHeaderNoExtensions(t *testing.T) {

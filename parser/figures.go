@@ -3,7 +3,7 @@ package parser
 import (
 	"bytes"
 
-	"github.com/gomarkdown/markdown/ast"
+	"github.com/markbates/markdown/ast"
 )
 
 // sFigureLine checks if there's a figure line (e.g., !--- ) at the beginning of data,

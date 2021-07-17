@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gomarkdown/markdown/parser"
+	"github.com/markbates/markdown/parser"
 )
 
 type testData struct {

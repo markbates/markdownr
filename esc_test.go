@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/gomarkdown/markdown/html"
+	"github.com/markbates/markdown/html"
 )
 
 func TestEsc(t *testing.T) {

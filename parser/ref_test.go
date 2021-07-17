@@ -3,7 +3,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/gomarkdown/markdown/ast"
+	"github.com/markbates/markdown/ast"
 )
 
 func TestCrossReference(t *testing.T) {
