@@ -71,6 +71,7 @@ var (
 		"progress":   {},
 		"section":    {},
 		"video":      {},
+		"include":    {},
 	}
 )
 
