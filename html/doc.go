@@ -5,7 +5,7 @@ Configuring and customizing a renderer
 
 A renderer can be configured with multiple options:
 
-	import "github.com/markbates/markdown/html"
+	import "github.com/markbates/markdownr/html"
 
 	flags := html.CommonFlags | html.CompletePage | html.HrefTargetBlank
 	opts := html.RendererOptions{
@@ -20,8 +20,8 @@ This is most useful for rendering nodes that allow for design choices, like
 links or code blocks.
 
 	import (
-		"github.com/markbates/markdown/html"
-		"github.com/markbates/markdown/ast"
+		"github.com/markbates/markdownr/html"
+		"github.com/markbates/markdownr/ast"
 	)
 
 	// a very dummy render hook that will output "code_replacements" instead of

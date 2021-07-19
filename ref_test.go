@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/markbates/markdown/parser"
+	"github.com/markbates/markdownr/parser"
 )
 
 // Markdown 1.0.3 reference tests

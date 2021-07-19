@@ -1,17 +1,17 @@
 # Markdown Parser and HTML Renderer for Go
 
-[![GoDoc](https://godoc.org/github.com/markbates/markdown?status.svg)](https://godoc.org/github.com/markbates/markdown) [![codecov](https://codecov.io/gh/markbates/markdown/branch/master/graph/badge.svg)](https://codecov.io/gh/markbates/markdown)
+[![GoDoc](https://godoc.org/github.com/markbates/markdownr?status.svg)](https://godoc.org/github.com/markbates/markdownr) [![codecov](https://codecov.io/gh/markbates/markdownr/branch/master/graph/badge.svg)](https://codecov.io/gh/markbates/markdownr)
 
-Package `github.com/markbates/markdown` is a very fast Go library for parsing [Markdown](https://daringfireball.net/projects/markdown/) documents and rendering them to HTML.
+Package `github.com/markbates/markdownr` is a very fast Go library for parsing [Markdown](https://daringfireball.net/projects/markdown/) documents and rendering them to HTML.
 
 It's fast and supports common extensions.
 
 ## API Docs:
 
-- https://godoc.org/github.com/markbates/markdown : top level package
-- https://godoc.org/github.com/markbates/markdown/ast : defines abstract syntax tree of parsed markdown document
-- https://godoc.org/github.com/markbates/markdown/parser : parser
-- https://godoc.org/github.com/markbates/markdown/html : html renderer
+- https://godoc.org/github.com/markbates/markdownr : top level package
+- https://godoc.org/github.com/markbates/markdownr/ast : defines abstract syntax tree of parsed markdown document
+- https://godoc.org/github.com/markbates/markdownr/parser : parser
+- https://godoc.org/github.com/markbates/markdownr/html : html renderer
 
 ## Users
 
@@ -39,14 +39,14 @@ output := markdown.ToHTML(md, nil, nil)
 
 Markdown format is loosely specified and there are multiple extensions invented after original specification was created.
 
-The parser supports several [extensions](https://godoc.org/github.com/markbates/markdown/parser#Extensions).
+The parser supports several [extensions](https://godoc.org/github.com/markbates/markdownr/parser#Extensions).
 
 Default parser uses most common `parser.CommonExtensions` but you can easily use parser with custom extension:
 
 ```go
 import (
-    "github.com/markbates/markdown"
-    "github.com/markbates/markdown/parser"
+    "github.com/markbates/markdownr"
+    "github.com/markbates/markdownr/parser"
 )
 
 extensions := parser.CommonExtensions | parser.AutoHeadingIDs
@@ -58,14 +58,14 @@ html := markdown.ToHTML(md, parser, nil)
 
 ## Customizing HTML renderer
 
-Similarly, HTML renderer can be configured with different [options](https://godoc.org/github.com/markbates/markdown/html#RendererOptions)
+Similarly, HTML renderer can be configured with different [options](https://godoc.org/github.com/markbates/markdownr/html#RendererOptions)
 
 Here's how to use a custom renderer:
 
 ```go
 import (
-    "github.com/markbates/markdown"
-    "github.com/markbates/markdown/html"
+    "github.com/markbates/markdownr"
+    "github.com/markbates/markdownr/html"
 )
 
 htmlFlags := html.CommonFlags | html.HrefTargetBlank
@@ -78,7 +78,7 @@ html := markdown.ToHTML(md, nil, renderer)
 
 HTML renderer also supports reusing most of the logic and overriding rendering of only specifc nodes.
 
-You can provide [RenderNodeFunc](https://godoc.org/github.com/markbates/markdown/html#RenderNodeFunc) in [RendererOptions](https://godoc.org/github.com/markbates/markdown/html#RendererOptions).
+You can provide [RenderNodeFunc](https://godoc.org/github.com/markbates/markdownr/html#RenderNodeFunc) in [RendererOptions](https://godoc.org/github.com/markbates/markdownr/html#RendererOptions).
 
 The function is called for each node in AST, you can implement custom rendering logic and tell HTML renderer to skip rendering this node.
 
@@ -86,9 +86,9 @@ Here's the simplest example that drops all code blocks from the output:
 
 ````go
 import (
-    "github.com/markbates/markdown"
-    "github.com/markbates/markdown/ast"
-    "github.com/markbates/markdown/html"
+    "github.com/markbates/markdownr"
+    "github.com/markbates/markdownr/ast"
+    "github.com/markbates/markdownr/html"
 )
 
 // return (ast.GoToNext, true) to tell html renderer to skip rendering this node
@@ -122,7 +122,7 @@ Here's an example of simple usage with Bluemonday:
 ```go
 import (
     "github.com/microcosm-cc/bluemonday"
-    "github.com/markbates/markdown"
+    "github.com/markbates/markdownr"
 )
 
 // ...
@@ -161,7 +161,7 @@ To run: `mdtohtml input-file [output-file]`
 
   NOTE: "safety" in this context means _runtime safety only_. In order to
   protect yourself against JavaScript injection in untrusted content, see
-  [this example](https://github.com/markbates/markdown#sanitize-untrusted-content).
+  [this example](https://github.com/markbates/markdownr#sanitize-untrusted-content).
 
 - **Fast**. It is fast enough to render on-demand in
   most web applications without having to cache the output.

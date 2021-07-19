@@ -3,7 +3,7 @@ package parser
 import (
 	"bytes"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 func (p *Parser) documentMatter(data []byte) int {

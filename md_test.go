@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/markbates/markdown/ast"
-	"github.com/markbates/markdown/md"
-	"github.com/markbates/markdown/parser"
+	"github.com/markbates/markdownr/ast"
+	"github.com/markbates/markdownr/md"
+	"github.com/markbates/markdownr/parser"
 )
 
 func TestMd(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 // Extensions is a bitmask of enabled parser extensions.

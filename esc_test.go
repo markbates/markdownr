@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/markbates/markdown/html"
+	"github.com/markbates/markdownr/html"
 )
 
 func TestEsc(t *testing.T) {

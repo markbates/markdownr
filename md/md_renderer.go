@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 // Renderer renders to markdown. Allows to convert to a canonnical

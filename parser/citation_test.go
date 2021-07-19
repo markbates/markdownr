@@ -3,7 +3,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 func TestCitation(t *testing.T) {

@@ -1,7 +1,7 @@
-checkoutLocation: "src/github.com/markbates/markdown"
+checkoutLocation: "src/github.com/markbates/markdownr"
 workspaceLocation: "."
 tasks:
   - command: >
-      cd /workspace/src/github.com/markbates/markdown &&
+      cd /workspace/src/github.com/markbates/markdownr &&
       go get -v ./... &&
       go test -c

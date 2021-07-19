@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 // Flags control optional behavior of parser.

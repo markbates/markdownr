@@ -16,9 +16,9 @@ Customizing parsing and HTML rendering
 You can customize parser and HTML renderer:
 
 	import (
-		"github.com/markbates/markdown/parser"
-		"github.com/markbates/markdown/renderer"
-		"github.com/markbates/markdown"
+		"github.com/markbates/markdownr/parser"
+		"github.com/markbates/markdownr/renderer"
+		"github.com/markbates/markdownr"
 	)
 	extensions := parser.CommonExtensions | parser.AutoHeadingIDs
 	p := parser.NewWithExtensions(extensions)

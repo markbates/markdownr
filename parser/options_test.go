@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 func blockTitleHook(data []byte) (ast.Node, []byte, int) {

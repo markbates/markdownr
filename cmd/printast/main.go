@@ -5,9 +5,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/markbates/markdown"
-	"github.com/markbates/markdown/ast"
-	"github.com/markbates/markdown/parser"
+	"github.com/markbates/markdownr"
+	"github.com/markbates/markdownr/ast"
+	"github.com/markbates/markdownr/parser"
 )
 
 // This prints AST of parsed markdown document.

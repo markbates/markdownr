@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/markbates/markdown/ast"
-	"github.com/markbates/markdown/html"
-	"github.com/markbates/markdown/parser"
+	"github.com/markbates/markdownr/ast"
+	"github.com/markbates/markdownr/html"
+	"github.com/markbates/markdownr/parser"
 )
 
 // Renderer is an interface for implementing custom renderers.

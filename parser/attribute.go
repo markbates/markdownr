@@ -3,7 +3,7 @@ package parser
 import (
 	"bytes"
 
-	"github.com/markbates/markdown/ast"
+	"github.com/markbates/markdownr/ast"
 )
 
 // attribute parses a (potential) block attribute and adds it to p.

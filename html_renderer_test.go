@@ -4,9 +4,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/markbates/markdown/ast"
-	"github.com/markbates/markdown/html"
-	"github.com/markbates/markdown/parser"
+	"github.com/markbates/markdownr/ast"
+	"github.com/markbates/markdownr/html"
+	"github.com/markbates/markdownr/parser"
 )
 
 func renderHookEmpty(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool) {
